@@ -3,11 +3,14 @@ source "http://rubygems.org"
 gemspec
 
 gem 'refinerycms', '~> 2.0.3'
+gem 'refinerycms-i18n', '~> 2.0.0'
+gem 'refinerycms-settings', '~> 2.0.0'
 
 group :development, :test do
   require 'rbconfig'
 
   gem 'refinerycms-testing', '~> 2.0.0'
+  gem 'guard-rspec', '~> 0.6.0'
 
   platforms :jruby do
     gem 'activerecord-jdbcsqlite3-adapter'
